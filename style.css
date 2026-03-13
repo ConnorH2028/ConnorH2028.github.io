@@ -1,5 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Gasoek+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 #multiverse {
     background: url(Multiverse.webp);
     background-size: cover;
 }
 
+#hero{
+    background: url(Multiverse\ shatter.webp);
+    background-size: cover;
+    color: white;
+}
+
+#info{
+    background: url(Multiverse\ shatter.webp);
+    background-size: cover;
+    color: white;
+}
+
+#dog{
+    background: url(Multiverse\ shatter.webp);
+    background-size: cover;
+    color: white;
+}
+
+#favorites{
+    background: url(Multiverse\ shatter.webp);
+    background-size: cover;
+    color: white;
+}
+
+#japan{
+    background: url(Multiverse\ shatter.webp);
+    background-size: cover;
+    color: white;
+}
+
+#h1 {
+  font-family: "Gasoek One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#multiverse {
+    font-family: "Permanent Marker", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
