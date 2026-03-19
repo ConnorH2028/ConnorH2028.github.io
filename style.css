@@ -46,4 +46,44 @@
     font-family: "Permanent Marker", cursive;
   font-weight: 400;
   font-style: normal;
+  min-height: 300vh;
+}
+
+div{
+    margin-bottom: 100px;
+}
+
+p, h2, h3, blockquote, hr, li {
+  /* animation-name: text-appear; @keyframes defined below */
+  /* animation-timing-function: ease-in; standard should be linear */
+  /* animation-fill-mode: both; keeps animated values forwards and backwards */
+  animation: text-appear ease-in both;
+  animation-timeline: view(); /* applies animation state relative to viewport */
+  animation-range: 0vh 70vh; /* set 0% and 100% positions */
+}
+img {
+  animation: image-appear ease-in both;
+  animation-timeline: view();
+  animation-range: entry 50% 100vh;
+}
+@prefers-reduced-motion {
+  p, h2, h3, blockquote, hr, img {
+    animation: none;
+  }
+}
+
+@keyframes image-appear {
+  from {
+    filter: saturate(0) contrast(4) brightness(.1) blur(3px);
+    opacity: 0;
+    scale: .95;
+    translate: 0 4rem;
+  }
+}
+
+@keyframes text-appear {
+  from {
+    opacity: 0;
+    translate: 0 8rem;
+  }
 }
